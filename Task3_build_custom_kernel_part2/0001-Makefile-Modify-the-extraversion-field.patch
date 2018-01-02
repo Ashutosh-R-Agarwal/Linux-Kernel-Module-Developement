@@ -1,0 +1,32 @@
+From cd5046cc248af18faf8fc46383912aae3ea59dda Mon Sep 17 00:00:00 2001
+From: Ashutosh Agarwal <edie5267@gmail.com>
+Date: Sun, 9 Apr 2017 19:33:17 +0530
+Subject: [PATCH] Makefile: Modify the extraversion field
+
+Changed the extraversion field and now it has "eudyptulay" string in it's
+version string.
+Now, uname -r is
+ 4.11.0-eudyptulay-00064-g89970a0-dirty
+
+Signed-off-by: Ashutosh Agarwal <edie5267@gmail.com>
+---
+ Makefile | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/Makefile b/Makefile
+index 231e6a7..20622e3 100644
+--- a/Makefile
++++ b/Makefile
+@@ -1,7 +1,7 @@
+ VERSION = 4
+ PATCHLEVEL = 11
+ SUBLEVEL = 0
+-EXTRAVERSION = -rc4
++EXTRAVERSION = -eudyptula
+ NAME = Fearless Coyote
+
+ # *DOCUMENTATION*
+--
+2.7.4
+
+

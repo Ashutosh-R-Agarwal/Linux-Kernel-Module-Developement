@@ -1,0 +1,22 @@
+Running on a machine:
+
+root@ashu-System-Product-Name-Invalid-entry-length-16-Fixed-up-to-11:~/Desktop/mykernel/linux#
+dmesg
+[    0.000000] Linux version 4.11.0-eudyptulay-00064-g89970a0-dirty
+(root@ashu-System-Product-Name-Invalid-entry-length-16-Fixed-up-to-11)
+(gcc version 5.4.0 20160609 (Ubuntu 5.4.0-6ubuntu1~16.04.4) ) #5 SMP
+Sat Apr 8 12:07:22 IST 2017
+[    0.000000] Command line:
+BOOT_IMAGE=/boot/vmlinuz-4.11.0-eudyptulay-00064-g89970a0-dirty
+root=UUID=0e8ac35d-08bc-41ff-8033-c455e5414bd1 ro quiet splash
+vt.handoff=7
+[    0.000000] x86/fpu: Supporting XSAVE feature 0x001: 'x87 floating
+point registers'
+[    0.000000] x86/fpu: Supporting XSAVE feature 0x002: 'SSE registers'
+[    0.000000] x86/fpu: Supporting XSAVE feature 0x004: 'AVX registers'
+[    0.000000] x86/fpu: xstate_offset[2]:  576, xstate_sizes[2]:  256
+[    0.000000] x86/fpu: Enabled xstate features 0x7, context size is
+832 bytes, using 'standard' format.
+
+
+
