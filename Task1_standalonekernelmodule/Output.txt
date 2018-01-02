@@ -1,0 +1,30 @@
+ENVIRONMENT VARIABLE is KERNEL_MBUILD_SOURCE
+
+make
+make -C /lib/modules/4.11.0-rc3+/build M=/root/Desktop/kernel_module modules
+make[1]: Entering directory '/root/kernel/linux-stable/linux'
+  CC [M]  /root/Desktop/kernel_module/hello.o
+  Building modules, stage 2.
+  MODPOST 1 modules
+  LD [M]  /root/Desktop/kernel_module/hello.ko
+make[1]: Leaving directory '/root/kernel/linux-stable/linux'
+
+
+
+OUTPUT OF MODULE LOADING:
+
+root@ashu-System-Product-Name-Invalid-entry-length-16-Fixed-up-to-11:~/Desktop/kernel_module#
+dmesg -c (Cleaning the demsg log just for me)
+root@ashu-System-Product-Name-Invalid-entry-length-16-Fixed-up-to-11:~/Desktop/kernel_module#
+insmod hello.ko
+root@ashu-System-Product-Name-Invalid-entry-length-16-Fixed-up-to-11:~/Desktop/kernel_module#
+dmesg
+[126122.185529] Hello world!
+root@ashu-System-Product-Name-Invalid-entry-length-16-Fixed-up-to-11:~/Desktop/kernel_module#
+rmmod hello
+root@ashu-System-Product-Name-Invalid-entry-length-16-Fixed-up-to-11:~/Desktop/kernel_module#
+dmesg
+[126122.185529] Hello world!
+[126200.721997] Goodbye.
+
+
