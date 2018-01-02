@@ -1,0 +1,19 @@
+Taken linux source from
+https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/
+
+On real machine did:
+mkdir -p /root/Desktop/mykernel
+git clone git://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git
+make oldconfig
+
+searched for CONFIG_LOCALVERSION_AUTO and changed it to y.
+CONFIG_LOCALVERSION="y"
+make -j8
+make modules_install -j8
+make modules_install install -j8
+update-grub2
+
+
+
+
+
